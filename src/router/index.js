@@ -1,25 +1,24 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import AddClienteView from "../views/AddClienteView.vue";
+import EditClienteView from "../views/EditClienteView.vue";
 
 const routes = [
+  // Vista principal: muestra la lista de clientes
+  { path: "/", name: "Home", component: HomeView },
+  // Vista de formulario para agregar nuevo cliente
+  { path: "/agregar", name: "Agregar", component: AddClienteView },
+  // Vista de formulario para editar cliente, pasando el ID como prop
   {
-    path: "/",
-    name: "home",
-    component: HomeView,
-  },
-  {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    path: "/editar/:id",
+    name: "Editar",
+    component: EditClienteView,
+    props: true,
   },
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
 });
 

@@ -1,24 +1,18 @@
-# vue-crud-clientes
+# CRUD Clientes con Vue 3 + Vuex + Vuetify
 
-## Project setup
-```
+Este proyecto implementa un CRUD de clientes usando Vue 3 (Composition API), Vuex para simular persistencia de datos, Vue Router para navegación, y Vuetify como framework de UI.
+
+## Funcionalidades
+
+- Listar, agregar, editar y eliminar clientes.
+- Validación de formulario.
+- Confirmación antes de eliminar.
+
+## Cómo correr el proyecto
+
+```bash
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# en caso de fallo por formato
+npm run lint -- --fix
