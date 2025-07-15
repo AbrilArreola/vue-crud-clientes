@@ -13,5 +13,5 @@ Este proyecto implementa un CRUD de clientes usando Vue 3 (Composition API), Vue
 npm install
 npm run serve
 
-# en caso de fallo por formato
+# en caso de fallo por formato prettier
 npm run lint -- --fix
