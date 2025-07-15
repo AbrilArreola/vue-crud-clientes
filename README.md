@@ -10,7 +10,6 @@ Este proyecto implementa un CRUD de clientes usando Vue 3 (Composition API), Vue
 
 ## Cómo correr el proyecto
 
-```bash
 npm install
 npm run serve
 
