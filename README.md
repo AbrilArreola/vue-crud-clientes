@@ -9,9 +9,10 @@ Este proyecto implementa un CRUD de clientes usando Vue 3 (Composition API), Vue
 - Confirmación antes de eliminar.
 
 ## Cómo correr el proyecto
-
+```bash
 npm install
 npm run serve
-
+```
 # en caso de fallo por formato prettier
+```bash
 npm run lint -- --fix
